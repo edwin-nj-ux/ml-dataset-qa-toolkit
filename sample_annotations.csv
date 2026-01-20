@@ -1,0 +1,11 @@
+item_id,label,confidence,rater_id
+1,correct,0.95,r1
+2,correct,0.92,r1
+3,incorrect,0.40,r1
+4,,0.80,r1
+5,correct,0.88,r1
+6,incorrect,0.30,r1
+7,correct,0.97,r1
+8,correct,0.60,r1
+9,incorrect,0.20,r1
+10,correct,0.91,r1

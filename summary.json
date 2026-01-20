@@ -1,0 +1,21 @@
+{
+  "input": {
+    "path": "/mnt/data/ml-dataset-qa-toolkit/data/sample_annotations.csv",
+    "format": "csv"
+  },
+  "n_rows": 10,
+  "columns": [
+    "item_id",
+    "label",
+    "confidence",
+    "rater_id"
+  ],
+  "missing_label_rate": 0.1,
+  "duplicate_ids": 0,
+  "imbalance": {
+    "max_share": 0.6,
+    "min_share": 0.3
+  },
+  "invalid_confidence": 0,
+  "below_min_confidence": 0
+}
