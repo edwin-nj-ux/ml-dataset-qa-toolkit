@@ -24,6 +24,12 @@ def main() -> None:
 
     df, meta = load_table(args.input)
 
+    if args.confidence_col in df.columns:
+        below = (df[args.confidence_col] < 0.5).sum()
+        print(f"Low-confidence samples (<0.5): {below}")
+    else:
+        print(f"Note: confidence column '{args.confidence_col}' not found; skipping confidence summary.")
+
     results = run_qa(
         df=df,
         id_col=args.id_col,
